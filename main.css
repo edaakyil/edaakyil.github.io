@@ -1,148 +1,136 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;700&display=swap');
+<!DOCTYPE html>
+<html lang="en">
 
-* {
-    box-sizing: border-box;
-}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Document</title>
+</head>
 
-
-/* Type */
-h1, h2, h3, h4, h5, h6 {
-    color: #ffffff;
-    font-family: Raleway, Helvetica, sans-serif;
-    font-weight: 700;
-    letter-spacing: 0.1em;
-    margin: 0 0 1em 0;
-    text-transform: uppercase;
-}
-
-h2 {font-size: 1.2em;}
-h3 {font-size: 0.9em;}
-h4 {font-size: 0.7em;}
-h5 { font-size: 0.7em;}
-h6 { font-size: 0.7em;}
-
-html, body {
-    height: 100%;
-    overflow-x: hidden;
-    width: 100%;
-}
-
-/* Fake image */
-.fakeimg {
-    background-color: #aaa;
-    width: 80%;
-    padding: 20px;
-    justify-content: center;
-}
-
-html {
-    /* background: linear-gradient(30deg, #ffffff08, #33300072 75%),
-    linear-gradient(30deg,rgb(0, 0, 0), rgb(11, 14, 34), rgba(158, 128, 51, 0.064) 7%,  rgba(129, 111, 67, 0.141), rgba(255, 255, 255, 0.034))  no-repeat center fixed, 
-    linear-gradient(30deg, rgba(0,0,0, 0.9) 10%, rgba(8, 9, 11, 0.936))  no-repeat center fixed , 
-    url("./images/city-6749295.jpg")  no-repeat center fixed; */
-    background-size: cover;
-    background-color:rgb(8, 9, 11);
-}
+<body>
 
 
-body {
-    margin: 0;
-    font-family: Raleway, Arial, Helvetica, sans-serif;
-}
-
-/* .hero {
-    background: linear-gradient(30deg, #ffffff08, #33300072 75%),
-    linear-gradient(30deg,rgb(0, 0, 0), rgb(11, 14, 34), rgba(158, 128, 51, 0.064) 7%,  rgba(129, 111, 67, 0.141), rgba(255, 255, 255, 0.034))  no-repeat center fixed, 
-    linear-gradient(30deg, rgba(0,0,0, 0.9) 10%, rgba(8, 9, 11, 0.936))  no-repeat center fixed , 
-    url("./images/city-6749295.jpg")  no-repeat center fixed;
-    background-size: cover;
-    background-color:rgb(8, 9, 11);
-    opacity: 0.6;
-} */
+    <div class="hero">
 
 
+        <aside class="aside">
 
-aside {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 25%;
-    /* background-color: rgb(22, 30, 49); */
-    /* background-color: rgb(40, 45, 55); */
-    background-color: rgb(24, 35, 55);
-    background-color: rgb(13, 23, 40);
-    background-color: rgba(0, 3, 9, 0.608);
-    background-image: linear-gradient(rgba(10, 10, 10, 0.252) 5%, rgba(111, 106, 98, 0.088), rgba(246, 199, 134, 0.05), rgba(10, 10, 10, 0.1));
-    background-position: center center;
-    background-size: cover;
-    box-shadow: 0 1px 3px rgba(0,0,0,.12), 0 1px 2px rgba(243, 189, 26, 0.141), 0 1px 10px rgba(180, 165, 121, 0.284);
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    overflow: hidden;
-    flex: 25%;
-}
-aside > div {
-    padding: 1.5em;
-}
+            <div class="card">
+                <h2>About Me</h2>
+                <div class="fakeimg avatar" style="height:100px;">
+                    Image
+                    <!-- <img src="" alt="Eda Akyıl" title="Eda Akyıl"> -->
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima, ratione.</p>
 
-li a {
-    display: block;
-    color: #000;
-    padding: 8px 16px;
-    text-decoration: none;
-}
+                <h3>Eğitim</h3>
+                <ul>
+                    <li>Orta Okul</li>
+                    <li>Lise</li>
+                    <li>Üniversite</li>
+                </ul>
 
-li a.active {
-    background-color: #04AA6D;
-    color: white;
-}
+                <h3>Tecrubelerim</h3>
+                <ul>
+                    <li>Brener</li>
+                    <li>Yapı Konfor</li>
+                    <li>Armeda</li>
+                </ul>
+            </div>
 
-li a:hover:not(.active) {
-    background-color: #555;
-    color: white;
-}
+            <div class="card">
+                <h3>Programlar</h3>
+                <ul>
+                    <li>Autocad</li>
+                    <li>3DsMax</li>
+                    <li>Revit Architecture</li>
+                    <li>Sketch Up</li>
+                    <li>Corona</li>
+                    <li>V-Ray</li>
+                    <li>Photoshop</li>
+                    <li>Adobe Illustrator</li>
+                    <li>Microsoft Programs</li>
+                </ul>
+            </div>
 
-.hero {
-    position: relative; 
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-    justify-content: center;
-}
+            <div class="card">
+                <h3>Popular Post</h3>
+                <div class="fakeimg">Image</div>
+                <div class="fakeimg">Image</div>
+                <div class="fakeimg">Image</div>
+            </div>
 
-.hero:before {    
-    content: "";
-    background-image: url('./images/city-6749295.jpg');
-    background-size: cover;
-    position: absolute;
-    overflow: auto;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    opacity: 0.15;
-}
+            <div class="card">
+                <h3>Follow Me</h3>
+                <p>Some text..</p>
+            </div>
 
-.hero > * {
-    color: #ffffff;  
-    /* font-size: 14rem; */
-    /* line-height: 0.9; */
-    /* text-align: center; */
-}
+        </aside>
 
-.row {
-    flex: 75%;
-    display: flex;
-    justify-content: center;
-    padding-left: 3em;
-    padding-right: 3em;
-}
 
-/* .main {
-    margin-left:25%;
-    padding:1px 16px;
-} */
+        <div class="row">
+
+
+
+            <section class="main">
+                <h1>Eda Akyıl Personal Website</h1>
+
+                <div class="card">
+                    <h2>TITLE HEADING</h2>
+                    <h5>Title description, Dec 7, 2017</h5>
+                    <div class="fakeimg" style="height:200px;">Image</div>
+                    <p>Some text..</p>
+                    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing
+                        elit,
+                        sed do
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis
+                        nostrud
+                        exercitation ullamco.</p>
+                </div>
+                <div class="card">
+                    <h2>TITLE HEADING</h2>
+                    <h5>Title description, Sep 2, 2017</h5>
+                    <div class="fakeimg" style="height:200px;">Image</div>
+                    <p>Some text..</p>
+                    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing
+                        elit,
+                        sed do
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis
+                        nostrud
+                        exercitation ullamco.</p>
+                </div>
+                <div class="card">
+                    <h2>About Me</h2>
+                    <div class="fakeimg" style="height:100px;">Image</div>
+                    <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+                </div>
+                <div class="card">
+                    <h3>Popular Post</h3>
+                    <div class="fakeimg">
+                        <p>Image</p>
+                    </div>
+                    <div class="fakeimg">
+                        <p>Image</p>
+                    </div>
+                    <div class="fakeimg">
+                        <p>Image</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3>Follow Me</h3>
+                    <p>Some text..</p>
+                </div>
+
+            </section>
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>
