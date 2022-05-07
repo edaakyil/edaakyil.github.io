@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* Type */
+h1, h2, h3, h4, h5, h6 {
+    color: #ffffff;
+    font-family: Raleway, Helvetica, sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    margin: 0 0 1em 0;
+    text-transform: uppercase;
+}
+
+h2 {font-size: 1.2em;}
+h3 {font-size: 0.9em;}
+h4 {font-size: 0.7em;}
+h5 { font-size: 0.7em;}
+h6 { font-size: 0.7em;}
+
+html, body {
+    height: 100%;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+/* Fake image */
+.fakeimg {
+    background-color: #aaa;
+    width: 80%;
+    padding: 20px;
+    justify-content: center;
+}
+
+html {
+    /* background: linear-gradient(30deg, #ffffff08, #33300072 75%),
+    linear-gradient(30deg,rgb(0, 0, 0), rgb(11, 14, 34), rgba(158, 128, 51, 0.064) 7%,  rgba(129, 111, 67, 0.141), rgba(255, 255, 255, 0.034))  no-repeat center fixed, 
+    linear-gradient(30deg, rgba(0,0,0, 0.9) 10%, rgba(8, 9, 11, 0.936))  no-repeat center fixed , 
+    url("./images/city-6749295.jpg")  no-repeat center fixed; */
+    background-size: cover;
+    background-color:rgb(8, 9, 11);
+}
+
+
+body {
+    margin: 0;
+    font-family: Raleway, Arial, Helvetica, sans-serif;
+}
+
+/* .hero {
+    background: linear-gradient(30deg, #ffffff08, #33300072 75%),
+    linear-gradient(30deg,rgb(0, 0, 0), rgb(11, 14, 34), rgba(158, 128, 51, 0.064) 7%,  rgba(129, 111, 67, 0.141), rgba(255, 255, 255, 0.034))  no-repeat center fixed, 
+    linear-gradient(30deg, rgba(0,0,0, 0.9) 10%, rgba(8, 9, 11, 0.936))  no-repeat center fixed , 
+    url("./images/city-6749295.jpg")  no-repeat center fixed;
+    background-size: cover;
+    background-color:rgb(8, 9, 11);
+    opacity: 0.6;
+} */
+
+
+
+aside {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    /* background-color: rgb(22, 30, 49); */
+    /* background-color: rgb(40, 45, 55); */
+    background-color: rgb(24, 35, 55);
+    background-color: rgb(13, 23, 40);
+    background-color: rgba(0, 3, 9, 0.608);
+    background-image: linear-gradient(rgba(10, 10, 10, 0.252) 5%, rgba(111, 106, 98, 0.088), rgba(246, 199, 134, 0.05), rgba(10, 10, 10, 0.1));
+    background-position: center center;
+    background-size: cover;
+    box-shadow: 0 1px 3px rgba(0,0,0,.12), 0 1px 2px rgba(243, 189, 26, 0.141), 0 1px 10px rgba(180, 165, 121, 0.284);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    overflow: hidden;
+    flex: 25%;
+}
+aside > div {
+    padding: 1.5em;
+}
+
+li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+li a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+
+.hero {
+    position: relative; 
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero:before {    
+    content: "";
+    background-image: url('./images/city-6749295.jpg');
+    background-size: cover;
+    position: absolute;
+    overflow: auto;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.15;
+}
+
+.hero > * {
+    color: #ffffff;  
+    /* font-size: 14rem; */
+    /* line-height: 0.9; */
+    /* text-align: center; */
+}
+
+.row {
+    flex: 75%;
+    display: flex;
+    justify-content: center;
+    padding-left: 3em;
+    padding-right: 3em;
+}
+
+/* .main {
+    margin-left:25%;
+    padding:1px 16px;
+} */
