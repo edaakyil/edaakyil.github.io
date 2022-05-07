@@ -94,8 +94,6 @@ body {
 aside {
     margin: 0;
     width: 25%;
-    background-color: rgb(24, 35, 55);
-    background-color: rgb(13, 23, 40);
     background-color: rgba(0, 3, 9, 0.608);
     background-image: linear-gradient(rgba(10, 10, 10, 0.252) 5%, rgba(111, 106, 98, 0.088), rgba(246, 199, 134, 0.05), rgba(10, 10, 10, 0.1));
     background-position: center center;
