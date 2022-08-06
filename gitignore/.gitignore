@@ -1,0 +1,25 @@
+# img
+*.jpg
+*.tif
+ben.png
+images/
+
+
+
+# videos
+*.mp4
+
+
+# All pdf files
+*.pdf
+
+
+# packages
+
+
+# All log files
+*.log
+
+
+# private files
+password.txt
