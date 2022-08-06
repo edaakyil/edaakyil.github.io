@@ -1,0 +1,114 @@
+html {
+    -webkit-text-size-adjust: 100%;
+}
+
+html, body {
+    font-size: 15px;
+    line-height: 1.5;
+    user-select: none;
+}
+
+html, body, div, img, hr,
+table, thead, tbody, tfoot, tr, th, td,
+section, header, nav, footer, article, aside, button,
+p, h1, h2, h3, h4, h5, h6 {
+    display: block;
+}
+
+body, h1, h2, h3, h4, h5, h6 {
+    font-family: Montserrat, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+h1 {
+    display: block;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+h2 {
+    font-size: 30px;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+h4 {
+    display: block;
+    margin-block-start: 1.33em;
+    margin-block-end: 1.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+:root {
+
+    /* Color */
+    --gray: #757575!important;
+    --dark-gray: #616161!important;;
+
+
+
+    /* Text */
+    --jumbo: 64px!important;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+h2 {
+    display: block;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.5em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.fa {
+    /* Position */
+    display: inline-block;
+
+    /* Style */
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-align: center!important;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+
+i {
+    margin-right: 8px;
+}
+
+hr {
+    background-color: var(--gray);
+    box-sizing: content-box;
+    display: block;
+    height: 0;
+    overflow: visible;
+    unicode-bidi: isolate;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+}
+
+table, th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+/* style dosyasi birinci degisiklik */
