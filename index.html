@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Local CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/media.css">
+    <title>Layout 24</title>
+</head>
+
+<body>
+
+    <!--Do: Left Menu -->
+    <div id="left-menu-back"></div>
+
+    <aside id="left-menu" onmouseover="opaque">
+        <div class="inner w3-white w3-text-grey w3-card-4 gleam">
+
+            <!-- 1 -->
+            <div id="left-first" class="first default">
+
+                <!-- Information -->
+                <div id="avatar-info" class="info">
+                    <h2>Eda Akyıl</h2>
+                    <p><i class="teal-icon fa fa-briefcase fa-fw"></i>Architect</p>
+                    <p><i class="teal-icon fa fa-home fa-fw"></i>İstanbul, Türkiye</p>
+                    <p><i class="teal-icon fa fa-envelope fa-fw"></i>edaakyil@gmail.com</p>
+                    <p><i class="teal-icon fa fa-phone fa-fw"></i>+905553451288</p>
+                </div>
+
+                <div id="avatar-img">
+                    <img src="./images/ben.png" alt="Eda Akyıl" title="Eda Akyıl">
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- 2 -->
+            <div id="left-second" class="second w3-container default">
+                <!-- Skills -->
+                <div id="skill-container" class="container">
+                    <p class="skill-title">
+                        <b><i class="teal-icon fa fa-asterisk fa-fw"></i>Skills</b>
+                    </p>
+                    <div class="bar-group">
+                        <p class="bar-name">Autocad</p>
+                        <div class="bar small">
+                            <div class="teal" style="width:100%">100%</div>
+                        </div>
+                    </div>
+                    <div class="bar-group">
+                        <p class="bar-name">3DsMax</p>
+                        <div class="bar small">
+                            <div class="teal" style="width:90%">90%</div>
+                        </div>
+                    </div>
+                    <div class="bar-group">
+                        <p class="bar-name">SketchUp</p>
+                        <div class="bar small">
+                            <div class="teal" style="width:90%">90%</div>
+                        </div>
+                    </div>
+                    <div class="bar-group">
+                        <p class="bar-name">RevitArchitectute</p>
+                        <div class="bar small">
+                            <div class="teal" style="width:90%">90%</div>
+                        </div>
+                    </div>
+                    <div class="bar-group">
+                        <p class="bar-name">Adobe Photoshop</p>
+                        <div class="bar small">
+                            <div class="teal" style="width:80%">80%</div>
+                        </div>
+                    </div>
+                    <div class="bar-group">
+                        <p class="bar-name">Adobe Illustrator</p>
+                        <div class="bar small">
+                            <div class="teal" style="width:80%">80%</div>
+                        </div>
+                    </div>
+                    <div class="bar-group">
+                        <p class="bar-name">Microsoft Office Programs</p>
+                        <div class="bar small">
+                            <div class="teal" style="width:80%">80%</div>
+                        </div>
+                    </div>
+
+
+                    <!-- Languages -->
+                    <p class="lang-title" style="margin: 15px 0 8px;">
+                        <b><i class="teal-icon fa fa-globe fa-fw"></i>Languages</b>
+                    </p>
+                    <div class="bar-group">
+                        <p class="bar-name">English</p>
+                        <div class="bar teal">
+                            <div class="teal" style="width:70%">70%</div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <!-- Contact -->
+                <footer class="contact default">
+                    <p>Find me a social media.</p>
+                    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+                    <i class="fa fa-instagram w3-hover-opacity"></i>
+                    <i class="fa fa-snapchat w3-hover-opacity"></i>
+                    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+                    <i class="fa fa-twitter w3-hover-opacity"></i>
+                    <i class="fa fa-linkedin w3-hover-opacity"></i>
+                </footer>
+    </aside>
+    <!-- End Left Menu -->
+
+
+
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class=""></div>
+    <!-- End Overlay effect when opening sidebar on small screens -->
+
+
+    <!--Do: Page Content -->
+    <div id="column-2">
+        <div id="main-container">
+
+            <!-- Navbar Button -->
+            <button class="nav-btn">
+                <span><i class="fa fa-bars"></i></span>
+            </button>
+            <!-- End Navbar Button -->
+
+            <!-- Header -->
+            <header class="default">
+                <div class="border">
+                    <div id="header-back">
+                        <h1 class="text-jumbo">
+                            My Portfolio
+                            <hr class="underline">
+                        </h1>
+                    </div>
+            </header>
+            <!-- End Header -->
+
+            <!-- Main Section -->
+            <section class="main">
+
+                <!-- Tab Container -->
+                <div id="tab-container" class="container">
+
+                    <!-- Tab Nav -->
+                    <div id="tab-nav-container" class="container">
+                        <hr>
+                        <nav>
+                            <button id="about-nav" class="tab-btn" onclick="showPanel(0)">
+                                <div class="circle"></div>
+                                About Me
+                            </button>
+                            <button id="school-nav" class="tab-btn" onclick="showPanel(1)">
+                                <div class="circle"></div>
+                                School Life
+                            </button>
+                            <button id="work-nav" class="tab-btn" onclick="showPanel(2)">
+                                <div class="circle"></div>
+                                Work Life
+                            </button>
+                        </nav>
+                    </div>
+                    <!-- End Tab Nav -->
+
+                    <!-- Tab Panel -->
+                    <div id="tab-panel-container" class="container">
+                        <!-- About Article -->
+                        <div id="about-panel" class="tab-panel">
+                            <article id="about-content">
+                                <h2>About</h2>
+                                <!-- <hr> -->
+                                <div class="content default">
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias consequatur
+                                        sed
+                                        laborum
+                                        dolorum
+                                        dicta
+                                        corrupti perferendis ratione vero reiciendis. Magni quaerat aspernatur
+                                        repudiandae
+                                        dicta
+                                        explicabo
+                                        obcaecati maxime modi qui adipisci. Voluptates minima corporis qui laboriosam
+                                        reiciendis
+                                        illum
+                                        modi,
+                                        odio ducimus adipisci velit assumenda, dicta dolores eveniet, nostrum hic
+                                        suscipit
+                                        fuga?
+                                        Facilis
+                                        odit
+                                        aliquam, sequi consequatur cumque cupiditate minima ad officiis maiores sed
+                                        libero
+                                        laboriosam,
+                                        repellat
+                                        deleniti excepturi omnis est qui perferendis ullam quia nam numquam accusantium,
+                                        aperiam
+                                        quae!
+                                        Officia
+                                        distinctio dolores cum quo sapiente dolorem ipsum commodi quis eum illum
+                                        consequatur
+                                        expedita,
+                                        repellendus quam numquam at amet harum minus incidunt!</p>
+                                </div>
+                            </article>
+                        </div>
+                        <!-- End About Article -->
+
+                        <!-- School Article -->
+                        <div id="school-panel" class="tab-panel">
+                            <article id="school-content">
+                                <h2>School</h2>
+                                <!-- <hr> -->
+                                <div class="content default">
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias consequatur
+                                        sed
+                                        laborum
+                                        dolorum
+                                        dicta
+                                        corrupti perferendis ratione vero reiciendis. Magni quaerat aspernatur
+                                        repudiandae
+                                        dicta
+                                        explicabo
+                                        obcaecati maxime modi qui adipisci. Voluptates minima corporis qui laboriosam
+                                        reiciendis
+                                        illum
+                                        modi,
+                                        odio ducimus adipisci velit assumenda, dicta dolores eveniet, nostrum hic
+                                        suscipit
+                                        fuga?
+                                        Facilis
+                                        odit
+                                        aliquam, sequi consequatur cumque cupiditate minima ad officiis maiores sed
+                                        libero
+                                        laboriosam,
+                                        repellat
+                                        deleniti excepturi omnis est qui perferendis ullam quia nam numquam accusantium,
+                                        aperiam
+                                        quae!
+                                        Officia
+                                        distinctio dolores cum quo sapiente dolorem ipsum commodi quis eum illum
+                                        consequatur
+                                        expedita,
+                                        repellendus quam numquam at amet harum minus incidunt!</p>
+                                </div>
+                            </article>
+                        </div>
+                        <!-- End School Article -->
+
+                        <!-- Work Article -->
+                        <div id="work-panel" class="tab-panel">
+                            <article id="work-content">
+                                <h2>Work</h2>
+                                <!-- <hr> -->
+                                <div class="content default">
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias consequatur
+                                        sed
+                                        laborum
+                                        dolorum
+                                        dicta
+                                        corrupti perferendis ratione vero reiciendis. Magni quaerat aspernatur
+                                        repudiandae
+                                        dicta
+                                        explicabo
+                                        obcaecati maxime modi qui adipisci. Voluptates minima corporis qui laboriosam
+                                        reiciendis
+                                        illum
+                                        modi,
+                                        odio ducimus adipisci velit assumenda, dicta dolores eveniet, nostrum hic
+                                        suscipit
+                                        fuga?
+                                        Facilis
+                                        odit
+                                        aliquam, sequi consequatur cumque cupiditate minima ad officiis maiores sed
+                                        libero
+                                        laboriosam,
+                                        repellat
+                                        deleniti excepturi omnis est qui perferendis ullam quia nam numquam accusantium,
+                                        aperiam
+                                        quae!
+                                        Officia
+                                        distinctio dolores cum quo sapiente dolorem ipsum commodi quis eum illum
+                                        consequatur
+                                        expedita,
+                                        repellendus quam numquam at amet harum minus incidunt!</p>
+                                </div>
+                            </article>
+                        </div>
+                        <!-- End Work Article -->
+
+                    </div>
+                    <!-- End Tab Panel -->
+                </div>
+                <!-- End Tab Container -->
+
+                <!-- Projects Article -->
+                <article id="projects" class="">
+                    <h2>Projects</h2>
+                    <hr>
+
+                    <!-- Container for the image gallery -->
+                    <div class="slide-container">
+                        <!-- Full-width images with number text -->
+                        <div class="mySlides">
+                            <img src="./images/cv/GrossMarket/1.jpg" alt="">
+                        </div>
+                        <div class="mySlides">
+                            <img src="./images/cv/GrossMarket/1.jpg" alt="">
+                        </div>
+                        <div class="mySlides">
+                            <img src="./images/cv/GrossMarket/1.jpg" alt="">
+                        </div>
+                        <div class="mySlides">
+                            <img src="./images/cv/GrossMarket/1.jpg" alt="">
+                        </div>
+                        <div class="mySlides">
+                            <img src="./images/cv/GrossMarket/1.jpg" alt="">
+                        </div>
+
+                        <!-- Next and previous buttons -->
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                        <!-- Image text -->
+                        <div class="caption-container">
+                            <p id="caption"></p>
+                        </div>
+
+                        <!-- Thumbnail images -->
+                        <div id="slide-row" class="default">
+                            <div class="slide-column">
+                                <img class="demo cursor" src="./images/cv/GrossMarket/1.jpg" alt="" title=""
+                                    onclick="currentSlide(1)">
+                            </div>
+                            <div class="slide-column">
+                                <img class="demo cursor" src="./images/cv/GrossMarket/1.jpg" alt="" title=""
+                                    onclick="currentSlide(2)">
+                            </div>
+                            <div class="slide-column">
+                                <img class="demo cursor" src="./images/cv/GrossMarket/1.jpg" alt="" title=""
+                                    onclick="currentSlide(3)">
+                            </div>
+                            <div class="slide-column">
+                                <img class="demo cursor" src="./images/cv/GrossMarket/1.jpg" alt="" title=""
+                                    onclick="currentSlide(4)">
+                            </div>
+                            <div class="slide-column">
+                                <img class="demo cursor" src="./images/cv/GrossMarket/1.jpg" alt="" title=""
+                                    onclick="currentSlide(5)">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Grid Portfolio -->
+                    <!-- Row - 1 -->
+                    <div class="flex-container default">
+
+
+                        <!-- Column- -->
+                        <div class="flex-item column default">
+                            <div class="flex-inner">
+                                <div class="port-img">
+                                    <a href="#" target="_blank">
+                                        <img src="./images/cv/1.png" alt="" title="">
+                                    </a>
+                                    <div class="middle">
+                                        <div class="middle-text">Gross Market</div>
+                                    </div>
+                                </div>
+                                <div class="port-desc">Lorem Ipsum</div>
+                            </div>
+                        </div>
+
+
+                        <!-- Column- -->
+                        <div class="flex-item column default">
+                            <div class="flex-inner">
+                                <div class="port-img">
+                                    <a href="#" target="_blank">
+                                        <img src="./images/cv/3.png" alt="" title="">
+                                    </a>
+                                    <div class="middle">
+                                        <div class="middle-text">Gross Market</div>
+                                    </div>
+                                </div>
+                                <div class="port-desc">Lorem Ipsum</div>
+                            </div>
+                        </div>
+
+                        <!-- Column- -->
+                        <div class="flex-item column default">
+                            <div class="flex-inner">
+                                <div class="port-img">
+                                    <a href="#" target="_blank">
+                                        <img src="./images/cv/4.png" alt="" title="">
+                                    </a>
+                                    <div class="middle">
+                                        <div class="middle-text">Gross Market</div>
+                                    </div>
+                                </div>
+                                <div class="port-desc">Lorem Ipsum</div>
+                            </div>
+                        </div>
+
+                        <!-- Column- -->
+                        <div class="flex-item column default">
+                            <div class="flex-inner">
+                                <div class="port-img">
+                                    <a href="#" target="_blank">
+                                        <img src="./images/cv/5.png" alt="" title="">
+                                    </a>
+                                    <div class="middle">
+                                        <div class="middle-text">Gross Market</div>
+                                    </div>
+                                </div>
+                                <div class="port-desc">Lorem Ipsum</div>
+                            </div>
+                        </div>
+
+                        <!-- Column- -->
+                        <div class="flex-item column default">
+                            <div class="flex-inner">
+                                <div class="port-img">
+                                    <a href="#" target="_blank">
+                                        <img src="./images/cv/6.png" alt="" title="">
+                                    </a>
+                                    <div class="middle">
+                                        <div class="middle-text">Gross Market</div>
+                                    </div>
+                                </div>
+                                <div class="port-desc">Lorem Ipsum</div>
+                            </div>
+                        </div>
+
+                        <!-- Column- -->
+                        <div class="flex-item column default">
+                            <div class="flex-inner">
+                                <div class="port-img">
+                                    <a href="#" target="_blank">
+                                        <img src="./images/cv/8.png" alt="" title="">
+                                    </a>
+                                    <div class="middle">
+                                        <div class="middle-text">Gross Market</div>
+                                    </div>
+                                </div>
+                                <div class="port-desc">Lorem Ipsum</div>
+                            </div>
+                        </div>
+
+                        <!-- Column- -->
+                        <div class="flex-item column default">
+                            <div class="flex-inner">
+                                <div class="port-img">
+                                    <a href="#" target="_blank">
+                                        <img src="./images/cv/8.png" alt="" title="">
+                                    </a>
+                                    <div class="middle">
+                                        <div class="middle-text">Gross Market</div>
+                                    </div>
+                                </div>
+                                <div class="port-desc">Lorem Ipsum</div>
+                            </div>
+                        </div>
+
+                        <!-- Column- -->
+                        <div class="flex-item column default">
+                            <div class="flex-inner">
+                                <div class="port-img">
+                                    <a href="#" target="_blank">
+                                        <img src="./images/cv/8.png" alt="" title="">
+                                    </a>
+                                    <div class="middle">
+                                        <div class="middle-text">Gross Market</div>
+                                    </div>
+                                </div>
+                                <div class="port-desc">Lorem Ipsum</div>
+                            </div>
+                        </div>
+
+                        <!-- Column- -->
+                        <div class="flex-item column default">
+                            <div class="flex-inner">
+                                <div class="port-img">
+                                    <a href="#" target="_blank">
+                                        <img src="./images/cv/8.png" alt="" title="">
+                                    </a>
+                                    <div class="middle">
+                                        <div class="middle-text">Gross Market</div>
+                                    </div>
+                                </div>
+                                <div class="port-desc">Lorem Ipsum</div>
+                            </div>
+                        </div>
+
+                        <!-- Column- -->
+                        <div class="flex-item column default">
+                            <div class="flex-inner">
+                                <div class="port-img">
+                                    <a href="#" target="_blank">
+                                        <img src="./images/cv/8.png" alt="" title="">
+                                    </a>
+                                    <div class="middle">
+                                        <a class="middle-text" href="#">Gross Market</a>
+                                    </div>
+                                </div>
+                                <div class="port-desc">Lorem Ipsum</div>
+                            </div>
+                        </div>
+
+                        <div class="clearfix"></div>
+
+
+
+                    </div>
+
+                </article>
+
+            </section>
+        </div>
+    </div>
+    <!-- End Portfolio Section -->
+
+
+    <!-- Footer -->
+    <footer></footer>
+    <!-- End Footer -->
+
+    <script src="./script.js"></script>
+</body>""
+
+</html>
+
+
+
+<!-- Bu bir denemedir. Bunu gördüğünde sil -->
